@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*outline: 1px solid red;*/
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+}
+.container{
+  height: 100vh;
+  width: 100%;
+}
+.parent{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+.child:first-child{
+  height: 80px;
+  width: 80px;
+  background: yellow;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  border-radius: 40px;
+  
+}
+.gchild{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+.ggchild{
+  position: absolute;
+  height: 60px;
+  width: 70px;
+  border-radius: 50%;
+  background:black;
+}
+.child:nth-child(2){
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  border-radius: 50px;
+  background: gray;
+  right: 15px;
+  top: 15px;
+}
+.child:nth-child(3){
+  height: 100px;
+  width: 130px;
+  position: absolute;
+  background:red;
+  bottom:  90px;
+  left: 300px;
+  z-index: 1;
+
+}
+.child:nth-child(4){
+  height: 100px;
+  width: 130px;
+  position: absolute;
+  background: blue;
+  bottom: 90px;
+  right: 300px;
+  z-index: 1;
+  
+}
+.child:nth-child(5){
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: #2B65EC;
+  bottom: 0;
+  border: 1px rgb(94, 172, 245)  ;
+  }
+  
+
+
+@media screen and (max-width : 900px){ 
+  .parent{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+  }
+  .child:first-child{
+    height: 80px;
+    width: 80px;
+    background: yellow;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    border-radius: 40px;
+    
+  }
+  .gchild{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+  }
+  .ggchild{
+    position: absolute;
+    height: 60px;
+    width: 70px;
+    border-radius: 50%;
+    background:black;
+  }
+  .child:nth-child(2){
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50px;
+    background: gray;
+    right: 15px;
+    top: 15px;
+  }
+  .child:nth-child(3){
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    background:red;
+    bottom:  90px;
+    left: 200px;
+    z-index: 2;
+  
+  }
+  .child:nth-child(4){
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    background: blue;
+    bottom: 90px;
+    right: 200px;
+    z-index: 2;
+    
+  }
+  .child:nth-child(5){
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: #2B65EC;
+    bottom: 0;
+    border: 1px rgb(94, 172, 245)  ;
+}
+}
